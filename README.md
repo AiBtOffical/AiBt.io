@@ -21,7 +21,7 @@ npm run dev
 ```
 The app will start.
 
-### 4. Project Structure
+### 4. 🗂️ Project Structure
 This project uses 
 **Vite + React + TypeScript**
 
@@ -33,8 +33,16 @@ To deploy, simply build the app:
 npm run build
 ```
 
-### 5. Clean the Project
+### 5. 🧹 Clean the Project
 
 ```bash 
 rm -rf node_modules
+```
+
+### 6. 🚀 Deploy Webpage
+
+```bash
+npm install 
+npm run build
+npm run deploy
 ```
