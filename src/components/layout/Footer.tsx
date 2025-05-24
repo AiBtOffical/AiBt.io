@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Blocks, Mail, MessageCircle, Facebook, Twitter, Linkedin, Github } from 'lucide-react';
+import { Mail, MessageCircle, Facebook, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <img
-                  src="favicon.png"
+                  src={`${import.meta.env.BASE_URL}favicon.png`}
                   alt="AiBT.io logo"
-                  className="h-8 w-8 rounded-md"
+                  className="h-8 w-8 rounded"
                   loading="lazy"
               />
               <span className="text-2xl font-bold gradient-text">AiBT.io</span>

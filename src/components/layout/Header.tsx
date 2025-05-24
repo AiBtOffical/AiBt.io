@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Menu, X, Blocks, ChevronDown } from 'lucide-react';
+import { Menu, X,  ChevronDown } from 'lucide-react';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -68,8 +68,9 @@ const Header: React.FC = () => {
 
           <Link to="/" className="flex items-center space-x-2">
             <img
-                src="favicon.png"
-                className="h-8 w-8 rounded-md"
+                src={`${import.meta.env.BASE_URL}favicon.png`}
+                alt="AiBT.io logo"
+                className="h-8 w-8 rounded"
                 loading="lazy"
             />
             <span className="text-2xl font-bold gradient-text">AiBT.io</span>
