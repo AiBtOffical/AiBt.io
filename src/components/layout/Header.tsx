@@ -65,19 +65,10 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between py-4">
-          {/*<Link to="/" className="flex items-center space-x-2">*/}
-          {/*  /!*<Blocks className="h-8 w-8 text-primary-500" />*!/*/}
-          {/*  <img*/}
-          {/*      src="/public/favicon.png"*/}
-          {/*      alt="AiBT.io logo"*/}
-          {/*      className="h-8 w-8 rounded-md"*/}
-          {/*  />*/}
-          {/*  <span className="text-2xl font-bold gradient-text">AiBT.io</span>*/}
-          {/*</Link>*/}
 
           <Link to="/" className="flex items-center space-x-2">
             <img
-                src="/favicon.png"
+                src="favicon.png"
                 className="h-8 w-8 rounded-md"
                 loading="lazy"
             />
