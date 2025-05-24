@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <img
-                  src="public/favicon.png"
+                  src="/favicon.png"
                   alt="AiBT.io logo"
                   className="h-8 w-8 rounded-md"
                   loading="lazy"

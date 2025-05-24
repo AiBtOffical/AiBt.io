@@ -77,7 +77,7 @@ const Header: React.FC = () => {
 
           <Link to="/" className="flex items-center space-x-2">
             <img
-                src="public/favicon.png"
+                src="/favicon.png"
                 className="h-8 w-8 rounded-md"
                 loading="lazy"
             />
