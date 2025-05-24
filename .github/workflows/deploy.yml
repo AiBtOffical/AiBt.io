@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # or 'master' if that's your default branch
+      - main  # change to your branch if not main
 
 permissions:
   contents: read
@@ -15,13 +15,13 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -29,20 +29,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Vite site
+      - name: Build with Vite
         run: npm run build
 
-      - name: Upload artifact
+      - name: Upload dist folder
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
 
   deploy:
-    needs: build-and-deploy
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
