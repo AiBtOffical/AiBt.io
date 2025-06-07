@@ -23,7 +23,7 @@ const Tokenomics: React.FC = () => {
         <Layout>
             <Section
                 id="tokenomics"
-                title="WIN Token Economics"
+                title="AiBT Token Economics"
                 subtitle="Powering the AiBT ecosystem with utility, governance, and rewards"
                 className="pt-32"
             >
@@ -100,12 +100,12 @@ const Tokenomics: React.FC = () => {
                         </div>
 
                         <div className="bg-dark-800 rounded-2xl p-6 border border-dark-700">
-                            <h3 className="text-xl font-semibold mb-4">WIN Token Benefits</h3>
+                            <h3 className="text-xl font-semibold mb-4">AiBT Token Benefits</h3>
                             <ul className="space-y-4">
                                 {[
                                     {
                                         label: 'Reduced Trading Fees',
-                                        desc: 'Hold WIN tokens to enjoy up to 50% reduction in trading fees on the AiBT DEX platform.'
+                                        desc: 'Hold AiBT tokens to enjoy up to 50% reduction in trading fees on the AiBT DEX platform.'
                                     },
                                     {
                                         label: 'Governance Rights',
@@ -113,7 +113,7 @@ const Tokenomics: React.FC = () => {
                                     },
                                     {
                                         label: 'Staking Rewards',
-                                        desc: 'Earn passive income by staking WIN tokens in various liquidity pools with variable APY.'
+                                        desc: 'Earn passive income by staking AiBT tokens in various liquidity pools with variable APY.'
                                     },
                                     {
                                         label: 'Premium Features',
